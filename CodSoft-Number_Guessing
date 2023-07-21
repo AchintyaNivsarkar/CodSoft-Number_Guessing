@@ -1,0 +1,27 @@
+//  Task - Random Number Generator 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int random,guess;
+	random = rand();
+    while(guess!=random)
+    {
+        cout<<"Guess the number : ";
+        cin>>guess;
+        if(guess==random)
+        {
+            cout<<". .Correct Guess. . ";
+        }
+            else if(guess>random)
+        {
+            cout<<"Guess something smaller. . \n";
+        }
+        else
+        {
+        cout<<"Guess something bigger. . \n";
+        }
+    }
+	return 0;
+}
